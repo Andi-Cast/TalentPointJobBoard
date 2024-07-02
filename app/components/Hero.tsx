@@ -3,7 +3,7 @@ export default async function Hero() {
     return(
         <section className="container my-16">
             <h1 className="text-4xl font-bold text-center">
-                Find your next <br></br>dream job
+                Find your next <br></br>big opportunity
             </h1>
             <form className="flex gap-2 mt-4 max-w-md mx-auto">
                 <input 

@@ -6,10 +6,10 @@ export default async function Header() {
   const signInUrl = await getSignInUrl();
 
   return (
-    <header className="bg-gray-800 text-white">
+    <header className="bg-slate-300 text-white">
       <div className="container flex items-center justify-between mx-auto py-4 px-6">
-        <Link href={'/'} className="font-bold text-2xl text-yellow-300">
-          Job Board
+        <Link href={'/'} className="font-bold text-2xl text-blue-700">
+          Talent Point
         </Link>
         <nav className="flex gap-4">
           {!user && (
@@ -32,9 +32,9 @@ export default async function Header() {
             </form>
           )}
           <Link
-            className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300"
+            className="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-blue-900 transition-colors duration-300"
             href={'/new-listing'}>
-            New Listing
+            Create Job Listing
           </Link>
         </nav>
       </div>

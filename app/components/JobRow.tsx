@@ -1,12 +1,10 @@
 'use client';
-
-import { type Job } from "@/models/Job";
-import { faHeart } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import TimeAgo from "./TimeAgo";
-import Link from "next/link";
-import Jobs from "./Jobs";
+import TimeAgo from "@/app/components/TimeAgo";
+import {Job, JobModel} from "@/models/Job";
+import {faHeart} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import axios from "axios";
+import Link from "next/link";
 
 export default function JobRow({jobDoc}:{jobDoc:Job}) {
 
@@ -20,8 +18,8 @@ export default function JobRow({jobDoc}:{jobDoc:Job}) {
                     <div className="content-center">
                         <img 
                             className="size-12"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/252px-Spotify_logo_without_text.svg.png?20160123212544" 
-                            alt="Spotify Logo">
+                            src={jobDoc?.jobIcon}
+                            alt="Job Icon">
                         </img>
                     </div>
                     <div className="grow sm:flex">
