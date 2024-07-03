@@ -35,6 +35,7 @@ Talent Point Job Board is a web application built with Next.js, MongoDB, and Wor
 ### Prerequisites
 - Node.js
 - MongoDB
+- AWS S3 
 - WorkOS API Key
 
 ### Installation
